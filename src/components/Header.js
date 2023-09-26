@@ -16,10 +16,10 @@ const Header = () => {
   return (
     <div className="flex justify-between bg-pink-200">
       <div>
-        <img className="logo-img" src={LOGO_URL} />
+        <img className="logo-img h-24" src={LOGO_URL} />
       </div>
-      <div className="p-4">
-        <ul className="m-4 p-4  flex">
+      <div className="p-2">
+        <ul className="m-2 pt-4 flex">
           <li className=" px-4">
             Online Status: {onlineStatus === true ? "✅" : "🔴"}
           </li>

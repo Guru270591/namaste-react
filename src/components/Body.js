@@ -94,17 +94,13 @@ const Body = () => {
         </div>
       </div>
 
-      <div className="m-4 px-4 flex flex-wrap">
+      <div className="m-4 px-4 flex flex-wrap justify-around">
         {filterRestaurents.map((restaurent) => (
           <Link
             key={restaurent?.info?.id}
             to={"/restaurent/" + restaurent?.info?.id}
           >
-            {restaurent?.info?.isOpen ? (
-              <ResCartPramoted resData={restaurent} />
-            ) : (
-              <ResCart resData={restaurent} />
-            )}
+            <ResCart resData={restaurent} />
           </Link>
         ))}
       </div>
